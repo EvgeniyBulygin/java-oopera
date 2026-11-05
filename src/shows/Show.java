@@ -1,3 +1,8 @@
+package shows;
+
+import people.Actor;
+import people.Director;
+
 import java.util.ArrayList;
 
 public class Show {
@@ -10,7 +15,7 @@ public class Show {
         this.title = title;
         this.duration = duration;
         this.director = director;
-        this.listOfActors = listOfActors;
+        this.listOfActors = new ArrayList<>(listOfActors);
     }
 
     public void printActors() {

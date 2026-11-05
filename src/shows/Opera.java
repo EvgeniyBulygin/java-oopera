@@ -1,18 +1,23 @@
+package shows;
+
+import people.Actor;
+import people.Director;
+
 import java.util.ArrayList;
 
-public class Ballet extends MusicalShow {
-    private final String choreographer;
+public class Opera extends MusicalShow {
+    private final int choirSize;
 
-    public Ballet(
+    public Opera(
             String title,
             int duration,
             Director director,
             ArrayList<Actor> listOfActors,
             String musicAuthor,
             String librettoText,
-            String choreographer
+            int choirSize
     ) {
         super(title, duration, director, listOfActors, musicAuthor, librettoText);
-        this.choreographer = choreographer;
+        this.choirSize = choirSize;
     }
 }

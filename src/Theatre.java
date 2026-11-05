@@ -1,10 +1,17 @@
+import people.Actor;
+import people.Director;
+import people.Gender;
+import shows.Ballet;
+import shows.Opera;
+import shows.Show;
+
 import java.util.ArrayList;
 
 public class Theatre {
     public static void main(String[] args) {
         // 1
         Actor valera = new Actor("Валера", "Зайцев", Gender.MALE, 188);
-        Actor ira = new Actor("Ира", "Помпухина", Gender.FEMALE, 169);
+        Actor ira = new Actor("Ира", "Пампухина", Gender.FEMALE, 169);
         Actor egor = new Actor("Егор", "Романов", Gender.MALE, 175);
         Director vasiliy = new Director("Василий", "Васельков", Gender.MALE, 13);
         Director larisa = new Director("Лариса", "Шарикова", Gender.FEMALE, 6);
