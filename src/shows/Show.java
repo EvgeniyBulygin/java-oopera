@@ -41,11 +41,10 @@ public class Show {
             System.out.println("Этот актёр уже в списке!");
             return;
         }
-        for (Actor actor : listOfActors) {
-            if (actor.getSurname().equals(surname)) {
-                listOfActors.remove(actor);
-                listOfActors.add(newActor);
-                System.out.println("Актёр заменён!");
+        for (int i = 0; i < listOfActors.size(); i++) {
+            if (listOfActors.get(i).getSurname().equals(surname)) {
+                listOfActors.set(i, newActor);
+                System.out.println("Актёр успешно заменён!");
                 return;
             }
         }

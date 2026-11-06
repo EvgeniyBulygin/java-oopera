@@ -61,7 +61,7 @@ public class Theatre {
         show.printActors();
 
         // 6
-        show.changeActor(valera, "Пум-пурум");
+        opera.changeActor(valera, "Пум-пурум");
 
         // 7
         opera.printLibrettoText();
